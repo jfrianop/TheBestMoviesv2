@@ -12,10 +12,13 @@ const displayMovies = (jsonData) => {
 }
 
 const displayMovie = (img, title, description) => {
-    $(".card-container").append('<div class="card m-3" style = "max-width: 18rem;" > <img src="' + img + '" class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">' + title + '</h5><p class="card-text">' + description + '</p></div></div>')
+    $(".card-container").append('<div class="card m-3" style = "max-width: 18rem;" > <img src="' +
+        img + '" class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">' +
+        title + '</h5><p class="card-text">' + description + '</p></div></div>')
 }
 
 const importMovies = () => {
+    $("#import").hide();
     fetchMovies().then((e => {
         displayMovies(e);
     }))
