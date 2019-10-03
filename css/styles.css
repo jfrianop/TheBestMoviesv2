@@ -89,3 +89,15 @@ html{
     color: #8A969B;
     padding: 6px 17px;
 }
+
+.youtube{
+    margin: auto;
+    margin-top: 150px;
+    width: 560px;
+    height: 315px;
+}
+
+.youtube-video{
+    width: 560px;
+    height: 315px;
+}
