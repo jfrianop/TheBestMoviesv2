@@ -1,0 +1,91 @@
+html{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    --lh: 1.4rem;
+    line-height: var(--lh);
+}
+
+.card-container{
+    width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie-card{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    max-width: 600px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px #BFC6C9;
+}
+.card-img{
+    border: none;
+    border-radius: 0;
+    width: 180px;
+    padding: 0;
+    margin: 0;
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 15px 20px 30px; 
+}
+.card-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #6B7A81;
+}
+.card-title h3{
+    margin: 0;
+}
+
+.card-tags{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #3E474A;
+}
+
+
+.card-divider{
+    background: #3E474A;
+    width: 2px;
+}
+
+.card-description{
+    --max-lines: 3;
+    max-height: calc(var(--lh) * var(--max-lines));
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #6B7A81;
+}
+.card-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-trailer{
+    all: unset;
+    color: #5cbef9;
+    border: solid 2px #5cbef9;
+    border-radius: 5px;
+    padding: 6px 17px;
+    cursor:pointer;
+}
+.card-trailer:hover{
+    background-color: #5cbef9;
+    color: white;
+}
+
+.card-addFavorite{
+    text-decoration: none;
+    color: #8A969B;
+    padding: 6px 17px;
+}
